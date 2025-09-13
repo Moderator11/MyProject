@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Gianella Princessa</title>
+  </head>
+  <body>
+    <h1>Gianella Princess Maker</h1>
+    <p>This website is game about making gianella into princess</p>
+    <button onclick="makePoor()">Make Gianella poor</button>
+    <button onclick="makeRich()">Make Gianella rich</button>
+    <button onclick="MakeMoreRich()">Make Gianella more rich</button>
+    <h2 id="money">Gianella wallet: 0 won</h2>
+
+    <script>
+      var money = 0;
+      var moneyDisplay = document.getElementById("money");
+      function makePoor() {
+        money = money - 10;
+        moneyDisplay.innerText = `Gianella wallet: ${money}won`;
+      }
+      function makeRich() {
+        money = money + 10;
+        moneyDisplay.innerText = `Gianella wallet: ${money}won`;
+      }
+      function MakeMoreRich() {
+        money = money * 2;
+        moneyDisplay.innerText = `Gianella wallet: ${money}won`;
+      }
+    </script>
+  </body>
+</html>
